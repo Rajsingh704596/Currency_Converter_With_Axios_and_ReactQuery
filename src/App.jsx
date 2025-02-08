@@ -38,6 +38,7 @@ function App() {
               className="amount-input" 
             />
             <hr />
+            <div className='container'>
             <label htmlFor="from" className="currency-label">From :</label>
             <select 
               value={fromCurrency} 
@@ -49,7 +50,9 @@ function App() {
                 return <option value={currency} key={currency}>{currency}</option>
               })}
             </select>
+            </div>
 
+            <div className='container'>
             <label htmlFor="to" className="currency-label">To :</label>
             <select 
               value={toCurrency} 
@@ -61,6 +64,7 @@ function App() {
                 return <option value={currency} key={currency}>{currency}</option>
               })}
             </select>
+            </div>
           </div>
 
           <button 

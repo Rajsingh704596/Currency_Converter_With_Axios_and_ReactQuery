@@ -1,10 +1,16 @@
 /* App.css */
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* General styles for the app container */
 .app-container {
   font-family: Arial, sans-serif;
   padding: 20px;
-  background-color: #f4f4f9;
+  background-color:black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,11 +29,11 @@
 .title {
   font-size: 24px;
   text-align: center;
-  color: #333;
+  color: hsl(212, 100%, 65%);
 }
 
 .input-container {
-  margin-bottom: 20px;
+  margin: 20px;
 }
 
 .amount-input {
@@ -40,8 +46,11 @@
 }
 
 .currency-label {
-  font-size: 14px;
+  font-size: 20px;
   margin-right: 10px;
+  font-weight: bold;
+  color: rgb(138, 138, 138);
+  width: 50%;
 }
 
 .currency-select {
@@ -50,7 +59,7 @@
   margin-bottom: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  width: 100%;
+  width: 40%;
 }
 
 .convert-btn {
@@ -85,4 +94,12 @@
   color: red;
   text-align: center;
   margin-top: 10px;
+}
+
+.container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding-top:10px;
+
 }
